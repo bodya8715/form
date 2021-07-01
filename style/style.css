@@ -28,7 +28,7 @@
 
 .register-title-text {
     flex-shrink: 0;
-    width: 31%;
+    max-width: 90%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -49,18 +49,19 @@
     margin-left: 10px;     
 }
 
-.register-description {
+.register-description,
+.form-flex,
+.form-input,
+.form-label-checkbox {
     margin-top: 20px;
 }
 
 .form-flex {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
 }
 
-.form-first-name,
-.form-last-name {
+.form-name {
     padding: 5px;
     width: 45%;
 }
@@ -69,14 +70,12 @@
     display: block;
     padding: 5px;
     width: 100%;
-    margin-top: 20px;
 }
 
 .form-label-checkbox {
     display: flex;
     align-items: center;
     width: 100%;
-    margin-top: 20px;
 }
 
 .form-checkbox {
