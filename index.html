@@ -10,24 +10,26 @@
 <body>
     <div class="wrapper">
         <article class="register">
-            <h2 class="register-title">Register</h2>
+            <h2 class="register-title">
+                <span class="register-title-text">Register</span>
+            </h2>
             <p class="register-description">Create your account. It`s free and only takes a minute.</p>
             <form class="form">
                 <div class="form-flex">
                     <input class="form-first-name" name="first-name" type="text" placeholder="First Name" required pattern="^[A-Z][a-z]$">
                     <input class="form-last-name" name="last-name" type="text" placeholder="Last Name" required pattern="^[A-Z][a-z]$">
                 </div>
-                <input class="form-email" name="email" type="email" placeholder="Email" required>
-                <input class="form-password" name="password" type="password" placeholder="Password" required>
-                <input class="form-confirm-password" name="confirm-password" type="password" placeholder="Confirm Password" required>
-                <label class="form-label-checkbox" required>
+                <input class="form-input" name="email" type="email" placeholder="Email" required>
+                <input class="form-input" name="password" type="password" placeholder="Password" required>
+                <input class="form-input" name="confirm-password" type="password" placeholder="Confirm Password" required>
+                <label class="form-label-checkbox">
                     <input class="form-checkbox" type="checkbox" value="true" required>
                     <span class="form-checkbox-text">
                         I accept the Terms of Use & Privacy Policy
                     </span>
                 </label>
-                <button class="form-submit" type="submit">
-                    <p class="form-submit-text">Register Now</p>
+                <button class="form-input form-submit" type="submit">
+                    Register Now
                 </button>
             </form>
         </article>

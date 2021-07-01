@@ -21,63 +21,42 @@
 
 .register-title {
     text-align: center;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.register-title-text {
+    flex-shrink: 0;
+    width: 31%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    max-width: 100%;
 }
 
 .register-title:before, .register-title:after  {
     content: "";
-    position: absolute;
     height: 2px;
-    width: 29%;
+    flex-grow: 1;
     background-color: lightgrey;
-    transform: translateY(-50%);
-    top: 50%;
 }
 
 .register-title:before {
-    left: 0;   
+    margin-right: 10px;  
 }
 
 .register-title:after {
-    right: 0;   
+    margin-left: 10px;     
 }
 
 .register-description {
     margin-top: 20px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    max-width: 95%;
-}
-
-.form-submit-text {
-    text-align: center;
-    margin: 0 auto;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    max-width: 40%; 
-}
-
-.form-checkbox-text {
-    display: inline-block;
-    vertical-align: top;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    max-width: 90%;  
 }
 
 .form-flex {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     margin-top: 20px;
-    width: 100%;
 }
 
 .form-first-name,
@@ -86,12 +65,7 @@
     width: 45%;
 }
 
-
-.form-email,
-.form-password,
-.form-confirm-password,
-.form-label-checkbox,
-.form-submit {
+.form-input {
     display: block;
     padding: 5px;
     width: 100%;
@@ -99,15 +73,25 @@
 }
 
 .form-label-checkbox {
-    padding: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form-checkbox {
+    margin-right: 10px;
 }
 
 .form-submit {
     background-color: green;
-    padding: 10px 0;
+    padding: 10px 50px;
     border: none;
     border-radius: 4px;
     color:#fff;
     font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
-
